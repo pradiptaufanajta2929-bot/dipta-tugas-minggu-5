@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi & Simulator Penerbangan - Pradipta Aufa Anajta</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Animated Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <!-- Audio Player Glass Bar -->
+    <div class="audio-bar-container">
+        <div class="glass-card audio-bar">
+            <div class="audio-info">
+                <i class="fa-solid fa-music music-icon"></i>
+                <span class="audio-title">BGM Flight Experience</span>
+            </div>
+            <div class="audio-controls">
+                <button id="btnPlayPause" class="btn-audio"><i class="fa-solid fa-play"></i></button>
+                <div class="volume-container">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50" class="volume-slider">
+                </div>
+            </div>
+            <audio id="bgmAudio" loop src="assets/audio/asap.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- 1. Perkenalan Diri (Hero Section) -->
+        <section id="hero" class="glass-card hero-section">
+            <div class="profile-badge">
+                <i class="fa-solid fa-plane-departure hero-icon"></i>
+            </div>
+            <h1 class="title">Halo, Saya <span class="highlight">Pradipta Aufa Anajta</span></h1>
+            <p class="subtitle">Kelas 9B | Modul Interaktif Dunia Penerbangan</p>
+            <div class="hero-divider"></div>
+            <p class="hero-desc">
+                Selamat datang di platform edukasi penerbangan interaktif! Di sini, kamu bisa mempelajari seluk-beluk ilmu kedirgantaraan, mengenal berbagai maskapai ternama, memahami jurusan & resiko penerbangan, hingga mencoba simulasi mengemudikan pesawat langsung dari browser kamu!
+            </p>
+            <a href="#materi" class="btn-primary"><i class="fa-solid fa-compass"></i> Mulai Jelajahi</a>
+        </section>
+
+        <!-- 2. Materi Penerbangan -->
+        <section id="materi" class="section-block">
+            <div class="section-title">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>Materi & Dunia Penerbangan</h2>
+            </div>
+
+            <!-- Pengenalan Singkat -->
+            <div class="glass-card content-card mb-4">
+                <h3>Apa itu Dunia Penerbangan?</h3>
+                <p>
+                    Penerbangan (Aviation) adalah seluruh kegiatan yang berkaitan dengan penggunaan ruang udara, pesawat udara, bandar udara, keselamatan & keamanan penerbangan, serta angkutan udara komersial maupun non-komersial. Industri penerbangan berperan vital dalam menghubungkan antar pulau dan negara secara cepat, efisien, dan aman.
+                </p>
+            </div>
+
+            <!-- Logo & Maskapai Penerbangan -->
+            <h3 class="subsection-title"><i class="fa-solid fa-plane-up"></i> Maskapai Komersial Utama di Indonesia</h3>
+            <div class="airline-grid">
+                <!-- Citilink -->
+                <div class="glass-card airline-card">
+                    <div class="logo-wrapper">
+                        <img src="assets/img/batik air.png" onerror="this.onerror=null; this.src='assets/img/logo.png';" alt="Citilink Logo" class="airline-logo">
+                    </div>
+                    <h4>Citilink</h4>
+                    <p>Anak perusahaan Garuda Indonesia yang beroperasi di segmen penerbangan berbiaya murah (LCC). Berfokus pada rute domestik dan regional dengan armada Airbus A320.</p>
+                </div>
+
+                <!-- Garuda Indonesia -->
+                <div class="glass-card airline-card">
+                    <div class="logo-wrapper">
+                        <img src="assets/img/garuda air.png" onerror="this.onerror=null; this.src='assets/img/logo.png';" alt="Garuda Indonesia Logo" class="airline-logo">
+                    </div>
+                    <h4>Garuda Indonesia</h4>
+                    <p>Maskapai penerbangan pembawa bendera (flag carrier) nasional Indonesia. Menyediakan layanan full-service standar internasional dengan kenyamanan premium.</p>
+                </div>
+
+                <!-- Batik Air -->
+                <div class="glass-card airline-card">
+                    <div class="logo-wrapper">
+                        <img src="assets/img/lion air.png" onerror="this.onerror=null; this.src='assets/img/logo.png';" alt="Batik Air Logo" class="airline-logo">
+                    </div>
+                    <h4>Batik Air</h4>
+                    <p>Maskapai layanan penuh (full-service) bagian dari Lion Air Group. Menawarkan penerbangan domestik dan internasional dengan fasilitas hiburan dalam penerbangan.</p>
+                </div>
+            </div>
+
+            <!-- Jurusan Penerbangan -->
+            <h3 class="subsection-title"><i class="fa-solid fa-graduation-cap"></i> Jurusan Karir & Pendidikan Penerbangan</h3>
+            <div class="jurusan-grid">
+                <div class="glass-card info-item">
+                    <div class="icon-box"><i class="fa-solid fa-user-pilot"></i></div>
+                    <h4>Penerbang (Pilot)</h4>
+                    <p>Pendidikan lisensi penerbang (PPL, CPL, IR, MER) untuk mengendalikan pesawat secara profesional dan bertanggung jawab atas keselamatan seluruh penumpang.</p>
+                </div>
+
+                <div class="glass-card info-item">
+                    <div class="icon-box"><i class="fa-solid fa-screws-tilting"></i></div>
+                    <h4>Teknik Pesawat Udara (Aircraft Maintenance)</h4>
+                    <p>Fokus pada pemeliharaan, perbaikan, dan perawatan mesin, struktur, serta sistem avionik pesawat udara agar selalu laik terbang (airworthy).</p>
+                </div>
+
+                <div class="glass-card info-item">
+                    <div class="icon-box"><i class="fa-solid fa-tower-observation"></i></div>
+                    <h4>Navigasi Udara / ATC (Air Traffic Control)</h4>
+                    <p>Mengatur lalu lintas penerbangan di udara dan darat bandara, mencegah tabrakan, dan memberikan instruksi arah serta ketinggian secara real-time.</p>
+                </div>
+
+                <div class="glass-card info-item">
+                    <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                    <h4>Manajemen Transportasi Udara</h4>
+                    <p>Mempelajari tata kelola logistik bandara, operasional maskapai, layanan ground handling, jadwal penerbangan, serta aspek hukum penerbangan.</p>
+                </div>
+            </div>
+
+            <!-- Resiko Penerbangan -->
+            <h3 class="subsection-title"><i class="fa-solid fa-triangle-exclamation"></i> Resiko & Tantangan Dunia Penerbangan</h3>
+            <div class="glass-card content-card">
+                <div class="risk-list">
+                    <div class="risk-item">
+                        <i class="fa-solid fa-cloud-bolt risk-icon"></i>
+                        <div>
+                            <strong>Faktor Cuaca Ekstrem:</strong> Turbulensi hebat, badai petir (thunderstorm), angin silang (crosswind), dan fenomena microburst yang menguji keahlian pilot.
+                        </div>
+                    </div>
+                    <div class="risk-item">
+                        <i class="fa-solid fa-gears risk-icon"></i>
+                        <div>
+                            <strong>Kegagalan Mekanikal & Avionik:</strong> Gangguan mesin, masalah sistem hidrolik, atau instrumen navigasi yang menuntut kesiapan prosedur darurat (emergency checklist).
+                        </div>
+                    </div>
+                    <div class="risk-item">
+                        <i class="fa-solid fa-brain risk-icon"></i>
+                        <div>
+                            <strong>Faktor Manusia & Kelelahan (Fatigue):</strong> Tekanan kerja tinggi, perbedaan zona waktu (jetlag), dan kebutuhan konsentrasi tinggi tanpa toleransi kesalahan (zero tolerance for errors).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Mini Game Flight Simulator -->
+        <section id="simulator" class="section-block">
+            <div class="section-title">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Mini Game Flight Simulator</h2>
+            </div>
+
+            <!-- Game Instructions Glass Card -->
+            <div class="glass-card tutorial-card mb-4">
+                <h3><i class="fa-solid fa-circle-info"></i> Tutorial & Cara Memainkan Game:</h3>
+                <div class="controls-guide">
+                    <div class="key-badge"><span>W</span> Naik (Pitch Up)</div>
+                    <div class="key-badge"><span>S</span> Turun (Pitch Down)</div>
+                    <div class="key-badge"><span>A</span> Melambat / Mundur</div>
+                    <div class="key-badge"><span>D</span> Mempercepat / Maju</div>
+                </div>
+                <p class="tutorial-desc">
+                    <strong>Misi Kamu:</strong> Terbangkan pesawat melewati <strong>Cincin Emas</strong> untuk menambah poin. Hindari menabrak <strong>Awan Petir Hitam</strong> atau jatuh ke laut!
+                </p>
+            </div>
+
+            <!-- Canvas Container -->
+            <div class="glass-card game-card">
+                <div class="game-hud">
+                    <div class="hud-item"><i class="fa-solid fa-star"></i> Skor: <span id="gameScore">0</span></div>
+                    <div class="hud-item"><i class="fa-solid fa-heart"></i> Nyawa: <span id="gameLives">3</span></div>
+                    <div class="hud-item"><i class="fa-solid fa-gauge-high"></i> Kecepatan: <span id="gameSpeed">100</span> km/h</div>
+                </div>
+                
+                <div class="canvas-wrapper">
+                    <canvas id="flightCanvas" width="800" height="400"></canvas>
+                    <div id="gameOverlay" class="game-overlay">
+                        <h3 id="overlayTitle">Flight Simulator Mini Game</h3>
+                        <p id="overlayDesc">Tekan tombol di bawah untuk memulai penerbangan!</p>
+                        <button id="btnStartGame" class="btn-primary"><i class="fa-solid fa-play"></i> Mulai Penerbangan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Interactive Poll / Interest Query -->
+        <section id="poll" class="section-block">
+            <div class="glass-card poll-card text-center">
+                <h2><i class="fa-solid fa-circle-question"></i> Jadi Gimana, Kamu Tertarik Dunia Penerbangan?</h2>
+                <p>Pilih tanggapan kamu di bawah ini untuk melihat pesan spesial!</p>
+                <div class="poll-buttons">
+                    <button class="btn-poll" onclick="handlePollChoice('sangat')"><i class="fa-solid fa-rocket"></i> Sangat Tertarik!</button>
+                    <button class="btn-poll" onclick="handlePollChoice('ragu')"><i class="fa-solid fa-magnifying-glass"></i> Masih Penasaran</button>
+                    <button class="btn-poll" onclick="handlePollChoice('belum')"><i class="fa-solid fa-face-smile"></i> Belum Tertarik</button>
+                </div>
+                <div id="pollResponse" class="poll-response hidden"></div>
+            </div>
+        </section>
+
+        <!-- 5. Penutupan & Footer -->
+        <footer class="glass-card footer-card">
+            <h3>Terima Kasih Telah Berkunjung!</h3>
+            <p>Semoga informasi dan game interaktif penerbangan ini bermanfaat untuk menambah wawasan kamu.</p>
+            <div class="footer-divider"></div>
+            <p class="copyright">
+                Dibuat oleh <strong>Pradipta Aufa Anajta</strong> | Kelas <strong>9B</strong> &copy; 2026 Flight Education Page.
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
